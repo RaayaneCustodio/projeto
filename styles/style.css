@@ -5,6 +5,10 @@
     --cor-analise: #0B192C;
     --cor-footer: #000000 ;
     --fonte-principal: "Inter", sans-serif;
+    /* --cor-fonte-header: */
+    --cor-fonte-home: #FFFFFF;
+    --cor-fonte-home2: #FF6500;
+    --cor-fonte-planta: #FF6500;
 }
 
 
@@ -13,6 +17,21 @@
     padding: 0;
 }
 
+.content-home{
+    background-color: var(--cor-home);
+    height: 100vh;
+}
+
+.content-home h1{
+  color: var(--cor-fonte-home);  
+}
+
+.content-home h3 {
+    color: var(--cor-fonte-home2);  
+  }
+  
+
 .content-planta{
     background-color: var(--cor-planta);
+    height: 100vh;
 }
