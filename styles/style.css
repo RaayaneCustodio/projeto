@@ -20,6 +20,8 @@
 .content-home{
     background-color: var(--cor-home);
     height: 100vh;
+    text-align: center;
+    font-size: 4rem;
 }
 
 .content-home h1{
@@ -33,5 +35,12 @@
 
 .content-planta{
     background-color: var(--cor-planta);
+    height: 100vh;
+    display: flex;
+    
+}
+
+.content-planta h1{
+    color: var(--cor-fonte-planta);
     height: 100vh;
 }
