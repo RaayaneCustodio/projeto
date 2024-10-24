@@ -1,9 +1,12 @@
-/* CORES
-#FF6500
-#1E3E62
-#0B192C
-#000000 
-*/
+:root {
+    --cor-header: #000000 ;
+    --cor-home: #0B192C;
+    --cor-planta: #000000;
+    --cor-analise: #0B192C;
+    --cor-footer: #000000 ;
+    --fonte-principal: "Inter", sans-serif;
+}
+
 
 * {
     margin: 0;
