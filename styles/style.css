@@ -43,4 +43,5 @@
 .content-planta h1{
     color: var(--cor-fonte-planta);
     height: 100vh;
+    font-size: 2rem;
 }
