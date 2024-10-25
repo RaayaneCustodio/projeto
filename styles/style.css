@@ -30,13 +30,19 @@ a {
 }
 
 .menu-bg {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     background-color: var(--cor-footer);
+    padding: 30px 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
     font: 400 1rem/1.15rem "Yrsa", sans-serif;
     text-transform: uppercase;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
 }
 
 .header-menu {
@@ -74,9 +80,11 @@ a {
     color: #FF6500;
 }
 
+.home-container{
+    background-color: var(--cor-home);
+}
 .content-home{
     min-height: 100vh;
-    background-color: var(--cor-home);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -85,42 +93,48 @@ a {
 }
 
 .content-home h1{
-  color: var(--cor-fonte-home);  
+  color: var(--cor-fonte-home);
+  font: 700 7rem/1.6 "Markazi Text", sans-serif;
+  text-transform: uppercase;
+
 }
 
 .content-home h3 {
-    color: var(--cor-fonte-home2);  
-  }
-  
+    color: var(--cor-fonte-home2);
+    font: 400 4rem/1.1 "Markazi Text", sans-serif;
 
-.content-planta{
+}
+  
+.planta-container{
+    background-color: var(--cor-planta); 
     min-height: 100vh;
-    background-color: var(--cor-planta);  
+    padding: 150px;
 }
 
 .content-planta img{
-    height: 80vh;
-    padding: 5rem;
+    height: 70vh;
+    padding: 50px 80px;
     width: auto;
 }
 
-
-.content-planta h1{
+.content-planta p{
     align-self: flex-end;
-    padding: 10rem;
+    padding: 8rem;
     color: var(--cor-fonte-planta);
     font-size: 2rem;
 }
 
 .content-planta h2{
+    font: 500 3rem/1.1 "Markazi Text", sans-serif;
+    text-transform: uppercase;
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: var(--cor-fonte-home); 
+    margin-left: 135px;
 }
- 
 
- .content-planta-flexbox{
+ .planta-img-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -128,12 +142,15 @@ a {
     
  }
 
-.content-rede{
+.content-analise{
     min-height: 100vh;
     background-color: var(--cor-analise);
     color: var(--cor-fonte-home); 
+    padding: 150px;
 }
 
-.content-rede h2{
-    padding: 1rem;
+.content-analise h2{
+    font: 500 3rem/1.1 "Markazi Text", sans-serif;
+    text-transform: uppercase;
+    margin-left: 135px;
 }
