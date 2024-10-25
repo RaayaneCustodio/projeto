@@ -25,9 +25,12 @@ body{
     box-sizing: border-box;
 }
 
+a {
+    color: var(--cor-fonte-home);
+}
+
 .menu-bg {
     background-color: var(--cor-footer);
-    color: var(--cor-fonte-home);
     font: 400 1rem/1.15rem "Yrsa", sans-serif;
     text-transform: uppercase;
     display: flex;
