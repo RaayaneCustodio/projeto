@@ -35,7 +35,7 @@ a {
     text-transform: uppercase;
     display: flex;
     justify-content: space-between;
-    padding: 20px 50px;
+    padding: 30px 50px;
 }
 
 .header-menu {
@@ -45,6 +45,10 @@ a {
     list-style-type: none;
 }
 
+.header-menu a:hover {
+    color: #FF6500;
+}
+
 .login {
     background-color: #FF6500;
     padding: 6px 48px;
@@ -52,12 +56,27 @@ a {
     margin-left: 100px;
 }
 
-.home-container{
-    background-color: var(--cor-home);
-    padding: 6.25rem 1.25rem ;
+.menu-item a::after {
+    content:"";
+    display: block;
+    width: 0px;
+    height: 2px;
+    background-color: #FF6500;
+    transition: 0.3s;
+}
+
+.menu-item a:hover::after {
+    width: 100%;
+}
+
+.login:hover {
+    background-color: #FFFFFF;
+    color: #FF6500;
 }
 
 .content-home{
+    min-height: 100vh;
+    background-color: var(--cor-home);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -94,7 +113,9 @@ a {
 }
 
 .content-planta h2{
-    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     color: var(--cor-fonte-home); 
 }
  
@@ -104,7 +125,7 @@ a {
     justify-content: space-between;
     align-items: center;
     gap: 5rem;
-    padding: 0 2rem;
+    
  }
 
 .content-rede{
@@ -115,5 +136,4 @@ a {
 
 .content-rede h2{
     padding: 1rem;
-    margin: 0;
 }
