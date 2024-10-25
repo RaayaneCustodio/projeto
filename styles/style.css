@@ -1,28 +1,26 @@
 :root {
-    --cor-header: #000000 ;
+    --cor-header: #000000;
     --cor-home: #0B192C;
     --cor-planta: #000000;
     --cor-analise: #0B192C;
-    --cor-footer: #000000 ;
+    --cor-footer: #000000;
     --fonte-principal: "Inter", sans-serif;
-    /* --cor-fonte-header: */
     --cor-fonte-home: #FFFFFF;
     --cor-fonte-home2: #FF6500;
     --cor-fonte-planta: #FF6500;
 }
 
-
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Aplicar box-sizing para todos os elementos */
 }
 
-body{
+body {
     height: 100vh;
-    box-sizing: border-box;
 }
 
-.content-home{
+.content-home {
     min-height: 100vh;
     background-color: var(--cor-home);
     display: flex;
@@ -32,35 +30,52 @@ body{
     font-size: 4rem;
 }
 
-.content-home h1{
-  color: var(--cor-fonte-home);  
+.content-home h1 {
+    color: var(--cor-fonte-home);
 }
 
 .content-home h3 {
-    color: var(--cor-fonte-home2);  
-  }
-  
-
-.content-planta{
-    min-height: 100vh;
-    background-color: var(--cor-planta);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 5rem;
-    
+    color: var(--cor-fonte-home2);
 }
 
-.content-planta img{
+.content-planta {
+    min-height: 100vh;
+    background-color: var(--cor-planta);
+}
+
+.content-planta img {
     height: 80vh;
     padding: 5rem;
     width: auto;
 }
 
-
-.content-planta h1{
+.content-planta h1 {
     align-self: flex-end;
-    padding: 10rem;
+    padding: 10rem; 
     color: var(--cor-fonte-planta);
     font-size: 2rem;
+}
+
+.content-planta h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--cor-fonte-home);
+}
+
+.content-planta-flexbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+}
+
+.content-rede {
+    min-height: 100vh;
+    background-color: var(--cor-analise);
+    color: var(--cor-fonte-home);
+}
+
+.content-rede h2 {
+    padding: 1rem;
 }
