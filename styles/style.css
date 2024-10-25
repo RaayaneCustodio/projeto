@@ -19,6 +19,7 @@
 
 .content-home{
     background-color: var(--cor-home);
+    padding-top: 12rem;
     height: 100vh;
     text-align: center;
     font-size: 4rem;
