@@ -35,12 +35,12 @@ a {
     text-transform: uppercase;
     display: flex;
     justify-content: space-between;
-    padding: 30px 50px;
+    align-items: center;
+    padding: 20px 50px;
 }
 
 .header-menu {
     display: flex;
-    align-items: center;
     gap: 40px;
     list-style-type: none;
 }
