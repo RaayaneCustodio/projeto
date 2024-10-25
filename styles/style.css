@@ -38,8 +38,14 @@
     background-color: var(--cor-planta);
     height: 100vh;
     display: flex;
+    justify-content: center;
     
 }
+
+.content-planta img{
+    height: 80vh;
+}
+
 
 .content-planta h1{
     color: var(--cor-fonte-planta);
