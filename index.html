@@ -1,50 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/mobile.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/mobile.css" />
 
     <title>Projeto WIFI</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="menu-bg">
-        <div>
-            <img src="images/" alt="">
-        </div>
-        <!-- <nav>
-            teste
-        </nav> -->
+      <div>
+        <a href="./">
+          <img src="images/wifi.svg" alt="Logo" width="32" height="32" />
+        </a>
+      </div>
+      <nav aria-label="primaria">
+        <ul class="header-menu">
+          <li><a href="#introducao"></a>Home</li>
+          <li><a href="#planta"></a>Planta</li>
+          <li><a href="#analise"></a>Análise</li>
+          <li class="login"><a href=""></a>Login</li>
+        </ul>
+      </nav>
     </header>
-    <main class="content">
-        <section class="content-section">
-            <div class="content-home">
-                <h1>Análise de Rede Wi-Fi Residencial</h1>
-                <h3>Mapeamento de Sinal Wi-Fi</h3>
-                <h3>Velocidade da Rede</h3>
-                <h3>Interferências</h3>
-                <h3>Soluções Propostas</h3>
-            </div>
-            <div class="content-planta">
-                <div class="content-planta-h2">
-                    <h2>Planta</h2>
-                </div>
-                <div class="content-planta-flexbox">
-                    <img src="./images/planta.png">
-                    <h1>Passe o mouse nos cômodos e verifique as medições de cada uma delas.</h1>
-                </div>
-            </div>
-            <div class="content-rede">
-                <div class="content-rede-h2">
-                    <h2>Rede</h2>
-                </div>
-            </div>
-        </section>
+    <main class="content" id="introducao">
+      <section class="content-section">
+        <div class="content-home">
+          <h1>Análise de Rede Wi-Fi Residencial</h1>
+          <h3>Mapeamento de Sinal Wi-Fi</h3>
+          <h3>Velocidade da Rede</h3>
+          <h3>Interferências</h3>
+          <h3>Soluções Propostas</h3>
+        </div>
+        <div class="content-planta">
+          <div class="content-planta-h2">
+            <h2>Planta</h2>
+          </div>
+          <div class="content-planta-flexbox">
+            <img src="./images/planta.png" />
+            <h1>
+              Passe o mouse nos cômodos e verifique as medições de cada uma
+              delas.
+            </h1>
+          </div>
+        </div>
+        <div class="content-rede">
+          <div class="content-rede-h2">
+            <h2>Rede</h2>
+          </div>
+        </div>
+      </section>
     </main>
     <footer></footer>
-</body>
-
+  </body>
 </html>
