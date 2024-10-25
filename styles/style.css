@@ -45,11 +45,33 @@ a {
     list-style-type: none;
 }
 
+.header-menu a:hover {
+    color: #FF6500;
+}
+
 .login {
     background-color: #FF6500;
     padding: 6px 48px;
     border-radius: 8px;
     margin-left: 100px;
+}
+
+.menu-item a::after {
+    content:"";
+    display: block;
+    width: 0px;
+    height: 2px;
+    background-color: #FF6500;
+    transition: 0.3s;
+}
+
+.menu-item a:hover::after {
+    width: 100%;
+}
+
+.login:hover {
+    background-color: #FFFFFF;
+    color: #FF6500;
 }
 
 .content-home{
