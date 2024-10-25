@@ -17,10 +17,17 @@
     padding: 0;
 }
 
-.content-home{
-    background-color: var(--cor-home);
-    padding-top: 12rem;
+body{
     height: 100vh;
+    box-sizing: border-box;
+}
+
+.content-home{
+    min-height: 100vh;
+    background-color: var(--cor-home);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
     font-size: 4rem;
 }
@@ -35,20 +42,25 @@
   
 
 .content-planta{
+    min-height: 100vh;
     background-color: var(--cor-planta);
-    height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
     
 }
 
 .content-planta img{
     height: 80vh;
+    padding: 5rem;
+    width: auto;
 }
 
 
 .content-planta h1{
+    align-self: flex-end;
+    padding: 10rem;
     color: var(--cor-fonte-planta);
-    height: 100vh;
     font-size: 2rem;
 }
