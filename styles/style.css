@@ -18,6 +18,11 @@ a {
     color: var(--cor-fonte-home);
 }
 
+header{
+    text-transform: uppercase;     
+}
+
+
 header .nav-link {
     color: #ffffff; 
     transition: color 0.3s ease; 
@@ -33,6 +38,7 @@ header .nav-link:hover {
 
 
 .content-home {
+    text-transform: uppercase;
     text-align: center;
 }
 
