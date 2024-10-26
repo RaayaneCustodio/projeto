@@ -12,7 +12,7 @@
 body {
     height: 100vh;
     box-sizing: border-box;
-    font-family: "Yrsa", sans-serif; 
+    font-family: "Yrsa", sans-serif;
 }
 
 a {
@@ -23,29 +23,32 @@ header {
     position: fixed;
     width: 100%;
     background-color: var(--cor-planta);
-    padding: 30px 50px;
+    padding: 10px 50px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    margin: 0;
 }
 
 .nav-link {
     color: #FFFFFF;
     text-transform: uppercase;
     transition: color 0.3s;
+    margin-right: 15px;
 }
 
 .nav-link:hover {
     color: var(--cor-fonte-home2);
 }
 
-.btn-login {
-    background-color: #FF6500;
-    border-radius: 8px;
-    margin-left: 100px;
-}
-
-.btn-login:hover {
-    background-color: #FFFFFF;
-    color: #FF6500;
+.btn {
+    margin-left: 10px;
 }
 
 .home-container {
@@ -58,18 +61,18 @@ header {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding: 2rem; 
+    padding: 2rem;
     text-transform: uppercase;
 }
 
 .content-home h1 {
     color: var(--cor-fonte-home);
-    font: 700 4rem/1.6 "Markazi Text", sans-serif;
+    font: 700 4rem/1.6 "Yrsa", sans-serif;
 }
 
 .content-home h3 {
     color: var(--cor-fonte-home2);
-    font: 400 2rem/1.1 "Markazi Text", sans-serif;
+    font: 400 2rem/1.1 "Yrsa", sans-serif;
 }
 
 .planta-container {
@@ -84,7 +87,7 @@ header {
 }
 
 .content-planta h2 {
-    font: 500 3rem/1.1 "Markazi Text", sans-serif;
+    font: 500 3rem/1.1 "Yrsa", sans-serif;
     text-transform: uppercase;
     color: var(--cor-fonte-home);
 }
@@ -97,7 +100,7 @@ header {
 }
 
 .content-analise h2 {
-    font: 500 3rem/1.1 "Markazi Text", sans-serif;
+    font: 500 3rem/1.1 "Yrsa", sans-serif;
     text-transform: uppercase;
 }
 
@@ -118,7 +121,7 @@ footer {
     margin: 0;
 }
 
-.dark{
+.dark {
     background-color: #000;
 }
 
