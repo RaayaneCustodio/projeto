@@ -1,156 +1,145 @@
 @import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&family=Yrsa:ital,wght@0,300..700;1,300..700&display=swap');
 
 :root {
-    --cor-header: #000000 ;
     --cor-home: #0B192C;
     --cor-planta: #000000;
     --cor-analise: #0B192C;
-    --cor-footer: #000000 ;
-    --fonte-principal: "Inter", sans-serif;
-    /* --cor-fonte-header: */
     --cor-fonte-home: #FFFFFF;
     --cor-fonte-home2: #FF6500;
     --cor-fonte-planta: #FF6500;
 }
 
-
-* {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-}
-
-body{
+body {
     height: 100vh;
     box-sizing: border-box;
+    font-family: "Yrsa", sans-serif; 
 }
 
 a {
     color: var(--cor-fonte-home);
 }
 
-.menu-bg {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+header {
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: var(--cor-footer);
+    width: 100%;
+    background-color: var(--cor-planta);
     padding: 30px 50px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    font: 400 1rem/1.15rem "Yrsa", sans-serif;
+}
+
+.nav-link {
+    color: #FFFFFF;
     text-transform: uppercase;
+    transition: color 0.3s;
 }
 
-.header-menu {
-    display: flex;
-    gap: 40px;
-    list-style-type: none;
+.nav-link:hover {
+    color: var(--cor-fonte-home2);
 }
 
-.header-menu a:hover {
-    color: #FF6500;
-}
-
-.login {
+.btn-login {
     background-color: #FF6500;
-    padding: 6px 48px;
     border-radius: 8px;
     margin-left: 100px;
 }
 
-.menu-item a::after {
-    content:"";
-    display: block;
-    width: 0px;
-    height: 2px;
-    background-color: #FF6500;
-    transition: 0.3s;
-}
-
-.menu-item a:hover::after {
-    width: 100%;
-}
-
-.login:hover {
+.btn-login:hover {
     background-color: #FFFFFF;
     color: #FF6500;
 }
 
-.home-container{
+.home-container {
     background-color: var(--cor-home);
 }
-.content-home{
+
+.content-home {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    font-size: 4rem;
+    padding: 2rem; 
+    text-transform: uppercase;
 }
 
-.content-home h1{
-  color: var(--cor-fonte-home);
-  font: 700 7rem/1.6 "Markazi Text", sans-serif;
-  text-transform: uppercase;
-
+.content-home h1 {
+    color: var(--cor-fonte-home);
+    font: 700 4rem/1.6 "Markazi Text", sans-serif;
 }
 
 .content-home h3 {
     color: var(--cor-fonte-home2);
-    font: 400 4rem/1.1 "Markazi Text", sans-serif;
-
+    font: 400 2rem/1.1 "Markazi Text", sans-serif;
 }
-  
-.planta-container{
-    background-color: var(--cor-planta); 
+
+.planta-container {
+    background-color: var(--cor-planta);
     min-height: 100vh;
-    padding: 150px;
+    padding: 150px 0;
 }
 
-.content-planta img{
+.content-planta img {
     height: 70vh;
-    padding: 50px 80px;
     width: auto;
 }
 
-.content-planta p{
-    align-self: flex-end;
-    padding: 8rem;
-    color: var(--cor-fonte-planta);
-    font-size: 2rem;
-}
-
-.content-planta h2{
+.content-planta h2 {
     font: 500 3rem/1.1 "Markazi Text", sans-serif;
     text-transform: uppercase;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: var(--cor-fonte-home); 
-    margin-left: 135px;
+    color: var(--cor-fonte-home);
 }
 
- .planta-img-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 5rem;
-    
- }
-
-.content-analise{
+.content-analise {
     min-height: 100vh;
     background-color: var(--cor-analise);
-    color: var(--cor-fonte-home); 
-    padding: 150px;
+    color: var(--cor-fonte-home);
+    padding: 150px 0;
 }
 
-.content-analise h2{
+.content-analise h2 {
     font: 500 3rem/1.1 "Markazi Text", sans-serif;
     text-transform: uppercase;
-    margin-left: 135px;
+}
+
+footer {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-icon {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.dark{
+    background-color: #000;
+}
+
+@media (max-width: 768px) {
+    .content-home h1 {
+        font-size: 3rem;
+    }
+
+    .content-home h3 {
+        font-size: 1.5rem;
+    }
+
+    .btn-login {
+        margin-left: 20px;
+    }
+
+    .content-planta img {
+        height: 50vh;
+    }
+    
+    .footer-icon {
+        width: 30px;
+    }
 }
